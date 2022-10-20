@@ -1,0 +1,39 @@
+-------------------------ligne-de-commande------------------------
+UFW :		sudo ufw allow "program"
+			sudo ufw allow "port"
+			sudo ufw status numbered
+			sudo ufw delete (rule number)
+
+SSH	:		systemctl status ssh
+			sudo service ssh status
+			/etc/ssh/sshd_config
+			ssh "user"@127.0.0.1 -p 4242
+
+SUDO:		su
+			sudo visudo
+
+USER:		sudo adduser "user"
+
+PASSWORD:	chage -l "user"
+			sudo passwd "user"
+			/etc/pam.d/common-password
+
+GROUPS:		getent group "group name"
+			groups "user"
+			sudo groupadd "group name"
+			sudo usermod -aG "group" "user"
+
+SYSTEM:		sudo systemctl restart "service"
+			uname -a
+			hostname
+			sudo hostnamectl set_hostname "nouveau nom"
+			/etc/hosts   ---> edit 127.0.0.1 "old hostname"
+			lsblk
+			free -m
+			df -Bg
+			ss
+			cat /proc/stat
+			lscpu
+			sudo crontab -e -u root
+			apt-get update	
+			apt-get upgrade
